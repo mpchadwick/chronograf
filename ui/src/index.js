@@ -15,6 +15,7 @@ import {
   KapacitorRulePage,
   KapacitorRulesPage,
   KapacitorTasksPage,
+  TickscriptEditorPage,
 } from 'src/kapacitor'
 import DataExplorer from 'src/data_explorer'
 import {DashboardsPage, DashboardPage} from 'src/dashboards'
@@ -137,6 +138,7 @@ const Root = React.createClass({
               <Route path="alert-rules" component={KapacitorRulesPage} />
               <Route path="alert-rules/:ruleID" component={KapacitorRulePage} />
               <Route path="alert-rules/new" component={KapacitorRulePage} />
+              <Route path="tickscript-editor/new" component={TickscriptEditorPage} />
               <Route path="admin" component={AdminPage} />
             </Route>
           </Route>
